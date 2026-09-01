@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.7.0.0" runtimeid="3.5.22.20" libversion="4.6.0.0" compiler="3.5.22.20" lmm="3.5.22.20" profile="CODESYS V3.5 SP22 Patch 2+" settings="SupportOPCUA, LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="starterSceneFactoryIO" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="0" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="IO">
+        <Node name="conveyor0" type="T_BOOL" access="ReadWrite" />
+        <Node name="conveyor1" type="T_BOOL" access="ReadWrite" />
+        <Node name="conveyorCorner0" type="T_BOOL" access="ReadWrite" />
+        <Node name="startButton" type="T_BOOL" access="ReadWrite" />
+        <Node name="startButtonLight" type="T_BOOL" access="ReadWrite" />
+        <Node name="stopButton" type="T_BOOL" access="ReadWrite" />
+        <Node name="stopButtonLight" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="PLC_PRG">
+        <Node name="conveyor0" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX20.0" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
